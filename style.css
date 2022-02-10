@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fad3;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+main > * + * {
+  margin-top: 2em;
+}
+
+.brand-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  background-color: #c7c5a6;
+  color: #4b450f;
+}
+
+.product-wrapper > * + * {
+  margin-top: 1em;
+}
+
+.product-image {
+  background-color: #e4e2bc;
+}
+
+.product-image img {
+  width: 300px;
+  height: 300px;
+  padding: 1em;
+}
+
+.product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+}
+
+.product-text > * + * {
+  margin-top: 1em;
+}
+
+.product-text section > * + * {
+  margin-top: 0.3em;
+}
+
+.product-text section h2 {
+  font-weight: 500;
+  color: #4b450f;
+}
+
+.product-text section p {
+  color: #6d6d62;
+}
+
+.product-text .rating-text {
+  color: black;
+  font-weight: 550;
+}
+
+.slider-description {
+  color: #423e3e;
+  font-weight: 400;
+}
+
+.slider-wrapper {
+  background-color: #c7c5a6;
+  padding: 0.8em;
+  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.slider-wrapper > * + * {
+  margin-top: 1em;
+}
+
+.slider-description {
+  font-size: 1.4rem;
+  padding: 0 1em;
+}
+
+.slider input[type='range'] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  background: transparent;
+  /* Otherwise white in Chrome */
+  background-color: #4b450f;
+  padding: 0.3em 0;
+  border-radius: 16px;
+}
+
+.slider input[type=range]::-webkit-slider-thumb {
+  height: 21px;
+  width: 21px;
+  background: #C7C5A5;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 16px;
+}
+/*# sourceMappingURL=style.css.map */
